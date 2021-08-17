@@ -1,0 +1,55 @@
+/* Footer */
+.esteEsMiFooter {
+    background-color: black;
+    color:#ffd700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: unset;
+    word-spacing: 100px;
+    letter-spacing: 10px;
+    text-align-last: center;
+}
+.redesContainer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.redesContainer ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.redesContainer ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: black;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+.redesContainer ul:hover a{
+   filter: blur(2px); 
+}
+.redesContainer ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(61, 36, 36, 0.4);
+    filter: none;
+}
+head body footer {
+    flex: 1;
+    padding: 1rem;
+    margin: 1px;
+    align-content: space-evenly;
+}
+.media {
+    padding-top: 20%;
+}

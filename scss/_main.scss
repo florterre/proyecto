@@ -1,0 +1,191 @@
+/* Resetear los estilos por default que trae HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  :root {
+    /* Variables son palabras reservadas que nos permiten almacenar un valor */
+  --color-principal: #ffd70f;
+  }
+ /*Grid*/
+.containerGridMusic {
+    display: grid;
+    gap: 2em;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+                        "sectorUno sectorDos sectorTres";
+}
+.sectorUno {
+    margin: 20px;
+    grid-area: sectorUno;
+    padding-top: 50%;
+}
+.sectorDos {
+    margin: 20px;
+    grid-area: sectorDos;
+    padding-top: 50%;
+}
+.sectorTres {
+    margin: 20px;
+    grid-area: sectorTres;
+    padding-top: 50%;
+}
+div img {
+    width:100%;
+    padding: 10px;
+}
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+.containerGridNextGigs {
+    display: grid;
+    gap: 2em;
+    width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+                        "NextGigsUno NextGigsDos NextGigsTres";}
+.NextGigsUno {
+    margin: 30px;
+    grid-area: NextGigsUno;
+    padding-top: 50%;
+}
+.NextGigsDos {
+    margin: 30px;
+    grid-area: NextGigsDos;
+    padding-top: 50%;
+}
+.NextGigsTres {
+    margin: 30px;
+    grid-area: NextGigsTres;
+    padding-top: 50%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 700px) {
+    .containerGridMusic {
+        display: grid;
+        gap: 2em;
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: 80%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "sectorUno"
+                             "sectorDos"
+                             "sectorTres";
+    }
+}
+/* Transformaciones y animaciones */
+:root {
+    /* Variables son palabras reservadas que nos permiten almacenar un valor */
+--color-principal: #ffd700;
+}
+/* No fue visitado por el usuario */
+.miMenu:link {
+    color: black;
+    text-decoration: underline;
+}
+/* Visitado por el usuario */
+.miMenu:visited {
+    color: violet;
+}
+/* Cuando el usuario pulsa sobre el enlace */
+.miMenu:active {
+    background-color: yellow;
+}
+.miMenu:hover::after{
+    content: "♪";
+    color: #ffd700;
+}
+/* Animaciones */
+.handsUp {
+    border-radius: 3px;
+    height: 60px;
+    width: 100%;
+    margin: 50px auto;
+    transition: all 2s;
+}
+    /* Transition necesita 2 valores
+property - duration */
+/*transition-property: all;
+transition-duration: 2s;*/
+.handsUp:hover {
+    transform: scale(4);
+}
+.Luces {
+    border-radius: 3px;
+    height: 60px;
+    width: 100%;
+    margin: 50px auto;
+    transition: all 2s;
+}
+.Luces:hover {
+    transform: scale(5);
+}
+.handsUp2 {
+    border-radius: 3px;
+    height: 60px;
+    width: 100%;
+    margin: 50px auto;
+    transition: all 2s;
+}
+.handsUp2:hover {
+    transform: scale(4);
+}
+
+/* Adaptar a mobile */
+@media screen and (max-width: 800px){
+    .main {
+        width: 100%;
+    }
+    .miMenu {
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {     
+    .main {
+    width: 100%;
+    }
+    .miMenu {
+        width: 100%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {     
+    .main {
+    width: 100%;
+    }
+    .miMenu {
+    width: 100%;
+    } 
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    .main {
+        width: 100%;
+    }
+    .miMenu {
+        width: 100%;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .main {
+        width: 100%;
+    }
+    .miMenu {
+        width: 100%;
+    }
+ } 

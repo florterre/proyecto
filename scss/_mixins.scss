@@ -1,0 +1,37 @@
+@mixin transform {
+    transform: scale (2);
+    transition: all 2s ease-in;
+}
+
+.animacion {
+    @include transform;
+}
+/* Parametros vacios */
+@mixin prefijos ($propiedad) {
+    transform: $propiedad;
+}
+
+.animacion {
+    @include prefijos(scale (2))
+}
+.animacion {
+    @include prefijos (tanslateX (50px))
+}
+.animacion {
+    @include prefijos (rotate (90deg))
+}
+
+
+@mixin condicion ($bg-color) {
+    background-color: $bg-color;
+    @if $bg-color == orange {
+        border-radius: 4px;
+    } @else {
+        border-radius: 10px;
+    }
+}
+
+.bg-condicion {
+    @include condicion (rgb(211, 238, 113))
+}
+

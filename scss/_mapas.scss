@@ -1,0 +1,13 @@
+$redes:(
+    instagram: #512E5F,
+    mixcloud: #5D6D7E,
+    soundcloud: #E67E22,
+    youtube: #FF5733,
+);
+/* Bucle */
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+ }
+ 

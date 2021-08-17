@@ -1,0 +1,18 @@
+header {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  .logo {
+    width: 200px;
+    flex-flow: initial;
+  }
+  .tituloMareveg {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffd700;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: left;
+    position: sticky;
+  }
