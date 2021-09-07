@@ -5,7 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Florencia Terrada",
   "license": "ISC",
-  "description": ""
+  "description": "Sitio web creado para DJ Mareveg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florterre/proyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/florterre/proyecto/issues"
+  },
+  "homepage": "https://github.com/florterre/proyecto#readme"
 }

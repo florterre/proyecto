@@ -157,9 +157,9 @@ h3 {
 /* Animaciones */
 .handsUp {
   border-radius: 3px;
-  height: 300px;
-  width: 320px;
-  margin: 20px auto;
+  height: 60px;
+  width: 100%;
+  margin: 50px auto;
   transition: all 2s;
 }
 
@@ -168,31 +168,31 @@ property - duration */
 /*transition-property: all;
 transition-duration: 2s;*/
 .handsUp:hover {
-  transform: scale(2);
+  transform: scale(4);
 }
 
 .Luces {
   border-radius: 3px;
-  height: 300px;
-  width: 320px;
-  margin: 20px auto;
+  height: 60px;
+  width: 100%;
+  margin: 50px auto;
   transition: all 2s;
 }
 
 .Luces:hover {
-  transform: scale(2);
+  transform: scale(5);
 }
 
 .handsUp2 {
   border-radius: 3px;
-  height: 300px;
-  width: 320px;
-  margin: 20px auto;
+  height: 60px;
+  width: 100%;
+  margin: 50px auto;
   transition: all 2s;
 }
 
 .handsUp2:hover {
-  transform: scale(2);
+  transform: scale(4);
 }
 
 /* Adaptar a mobile */
@@ -245,6 +245,24 @@ transition-duration: 2s;*/
     width: 100%;
   }
 }
+/* Bucle */
+.btn--instagram {
+  background-color: #512E5F;
+}
+
+.btn--mixcloud {
+  background-color: #5D6D7E;
+}
+
+.btn--soundcloud {
+  background-color: #E67E22;
+}
+
+.btn--youtube {
+  background-color: #FF5733;
+}
+
+/* Variables */
 nav {
   float: left;
 }
@@ -448,16 +466,4 @@ head body footer {
   border-radius: 10px;
 }
 
-.btn--instagram {
-  background-color: #512E5F;
-}
-.btn--mixcloud {
-  background-color: #5D6D7E;
-}
-.btn--soundcloud {
-  background-color: #E67E22;
-}
-.btn--youtube {
-  background-color: #FF5733;
-}
 /*# sourceMappingURL=style.css.map */
